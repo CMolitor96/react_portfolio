@@ -1,5 +1,5 @@
 import React from 'react';
-import CollapsibleExample from './navigation';
+import Navigation from './navigation';
 
 const styles = {
     top: '0',
@@ -11,7 +11,7 @@ const styles = {
 function Header() {
     return (
         <div style={styles}>
-            <CollapsibleExample />
+            <Navigation />
         </div>
     );
 }
