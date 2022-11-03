@@ -1,12 +1,16 @@
 import React from 'react';
 // import LandingPage from './components/mainpage';
 // import Header from './components/header';
-import CollapsibleExample from './components/navbar';
+// import CollapsibleExample from './components/navigation';
+import Header from './components/header';
+import Footer from './components/footer';
+
 
 function App() {
   return (
     <div>
-      <CollapsibleExample />
+      <Header />
+      <Footer />
     </div>
   );
 }
