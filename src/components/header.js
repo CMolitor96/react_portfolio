@@ -8,10 +8,10 @@ const styles = {
     backgroundColor: 'green',
 }
 
-function Header() {
+function Header({currentPage, setCurrentPage}) {
     return (
         <div style={styles}>
-            <Navigation />
+            <Navigation currentPage = {currentPage} setCurrentPage = {setCurrentPage}/>
         </div>
     );
 }

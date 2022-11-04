@@ -10,23 +10,25 @@ function Project() {
     const [currentPage, setCurrentPage] = useState('About');
 
     const renderPage = () => {
-      if (currentPage === 'About') {
-        return <About />;
+      if (currentPage === 'Resume') {
+        return <Resume />;
       }
       if (currentPage === 'Portfolio') {
         return <Portfolio />;
       }
       if (currentPage === 'Contact') {
         return <Contact />;
+      } 
+      if (currentPage === 'About') {
+      return <About />;
       }
-      return <Resume />;
     };
 
     return (
         <div>
         <Header currentPage={currentPage} setCurrentPage={setCurrentPage}/>
         {renderPage()}
-        <Footer />
+        <Footer currentPage={currentPage} setCurrentPage={setCurrentPage}/>
       </div>
     );
 }

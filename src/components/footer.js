@@ -25,11 +25,11 @@ const styles = {
     }
 }
 
-function Footer() {
+function Footer({currentPage, setCurrentPage}) {
     return (
         <div style={styles.footer}>
             <div style={styles.icon}><FaGithub /></div>
-            <div style={styles.icon}><FaEnvelope /></div>
+            <div style={styles.icon} onClick={() => setCurrentPage('Contact')}><FaEnvelope /></div>
             <div style={styles.icon}><FaLinkedin /></div>
         </div>
     );
