@@ -6,18 +6,17 @@ import { FaLinkedin } from "react-icons/fa";
 
 const styles = {
     footer: {
-        position: 'fixed',
         bottom: 0,
         width: '100%',
         backgroundColor: '#212529',
         color: 'white',
         height: '4rem',
-        padding: '1rem',
         fontFamily: 'helvetica',
         fontSize: '1.3rem',
         display: 'flex',
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
+        marginTop: '2rem',
     },
     icon: {
         padding: '1rem',
@@ -26,11 +25,18 @@ const styles = {
 }
 
 function Footer({currentPage, setCurrentPage}) {
+    const github = () => {
+        window.open('https://github.com/CMolitor96', '_blank');
+    }
+    const linkedin = () => {
+        window.open('https://www.linkedin.com/in/charles-molitor-725703119', '_blank');
+    }
+
     return (
         <div style={styles.footer}>
-            <div style={styles.icon}><FaGithub /></div>
+            <div style={styles.icon} onClick={github}><FaGithub /></div>
             <div style={styles.icon} onClick={() => setCurrentPage('Contact')}><FaEnvelope /></div>
-            <div style={styles.icon}><FaLinkedin /></div>
+            <div style={styles.icon} onClick={linkedin}><FaLinkedin /></div>
         </div>
     );
 }
