@@ -3,7 +3,7 @@ import FitFood from '../images/FitFood.png';
 import GOOL from '../images/Gool.png';
 import DazeCam from '../images/Dazecam.png';
 import { useState } from 'react';
-
+import Project from './project';
 
 const styles = {
     header: {
@@ -35,6 +35,31 @@ const styles = {
     }
 }
 
+
+const dazeCamPTag = `A prototype landing page for the ios app Dazecam, made by Darren Asaro. Sell your 
+    film camera. Throw away your disposable. Because with this app you’ll have the ability to create 
+    photos indistinguishable from real film through effects you will not find in any other app. Grace 
+    your photos with smooth vintage pastel colors, dreamy glow, tasteful light leaks, and many other 
+    nostalgic visual garnishes to make them look like a lazy midsummer afternoon of 1976. It’s simple. 
+    It’s sleek. It’s powerful. It’s free. It's just begging to be downloaded. Feel free to check out 
+    @daze.cam on instagram. And if you haven't noticed - the old wave is the new wave.`;
+
+const fitFoodPTag = `Fitfood is a web application that allows users to create customized meal and workout 
+plans. Users will be able to access the Edamam API with over 2,000,000 recipes to 
+create customized meal plans according to their dietary and workout needs. Options 
+include calorie ranges, macronutrient targets, and special dietary restrictions
+including vegetarians and vegans. Users will also be able to create customized workout 
+plans tailored to specific muscle groups. Users will simply choose what muscle group 
+they would like to train for that day and through an exercise API exercises will be 
+displayed to the user with instructions on how to train.`;
+
+const dazecam = {
+    href: "https://cmolitor96.github.io/dazecamLanding/",
+    imgSrc: DazeCam,
+    imgAlt: "Dazecam Landing Page",
+    pTag: dazeCamPTag
+};
+
 function Portfolio() {
     const [isHover, setIsHover] = useState(false);
 
@@ -51,34 +76,18 @@ function Portfolio() {
                     Portfolio
                 </div>
             </div>
-            <div style={styles.border} className='row justify-content-center align-items-center d-flex '>
-                <div className='col-sm text-center p-3'>
-                    <a href="https://cmolitor96.github.io/dazecamLanding/" target="_blank" rel="noreferrer"> 
-                        <img src={DazeCam} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} alt="Dazecam Landing Page" style={styles.image}/>
-                    </a>
-                </div>
-                <div className='col-sm text-center p-3'>
-                    <p>A prototype landing page for the ios app Dazecam, made by Darren Asaro. Sell your film camera. Throw away 
-                       your disposable. Because with this app you’ll have the ability to create photos 
-                       indistinguishable from real film through effects you will not find in any other app.
-                       Grace your photos with smooth vintage pastel colors, dreamy glow, tasteful light leaks, 
-                       and many other nostalgic visual garnishes to make them look like a lazy midsummer 
-                       afternoon of 1976. It’s simple. It’s sleek. It’s powerful. It’s free. It's just begging 
-                       to be downloaded. Feel free to check out @daze.cam on instagram. And if you haven't 
-                       noticed - the old wave is the new wave.</p>
-                </div>
-            </div>
+            <Project {...dazecam}/>
 
             <div style={styles.border} className='row justify-content-center align-items-center d-flex'>
             <div className='col-sm text-center p-3'>
-                    <p>Fitfood is a web application that allows users to create customized meal and workout 
+                    <p>"Fitfood is a web application that allows users to create customized meal and workout 
                        plans. Users will be able to access the Edamam API with over 2,000,000 recipes to 
                        create customized meal plans according to their dietary and workout needs. Options 
                        include calorie ranges, macronutrient targets, and special dietary restrictions
                        including vegetarians and vegans. Users will also be able to create customized workout 
                        plans tailored to specific muscle groups. Users will simply choose what muscle group 
                        they would like to train for that day and through an exercise API exercises will be 
-                       displayed to the user with instructions on how to train.</p>
+                       displayed to the user with instructions on how to train."</p>
                 </div>
                 <div className='col-sm text-center p-3'>
                     <a href="https://kevinumayam.github.io/Fit-Food/" target="_blank" rel="noreferrer"> 
