@@ -1,7 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
 
-//Need to pass in a href, img src, img alt, and p tag
 const styles = {
     header: {
         textAlign: 'center',
@@ -11,6 +10,7 @@ const styles = {
     image: {
         height: '15rem',
         width: '15rem',
+        borderStyle: 'solid',
         borderRadius: '1rem',
         boxShadow: '.25rem .5rem'
     },
@@ -32,7 +32,8 @@ const styles = {
     }
 }
 
-function Project({href, imgSrc, imgAlt, pTag}) {
+function Project({href, imgSrc, imgAlt, pTag, github}) {
+    // eslint-disable-next-line
     const [isHover, setIsHover] = useState(false);
 
     const handleMouseEnter = () => {
@@ -51,6 +52,9 @@ function Project({href, imgSrc, imgAlt, pTag}) {
                 </div>
                 <div className='col-sm text-center p-3'>
                     <p>{pTag}</p>
+                        <a href={github} target="_blank" rel="noreferrer">
+                            <p>Check out this repo on my GitHub!</p>
+                        </a>
                 </div>
             </div>
         </div>
