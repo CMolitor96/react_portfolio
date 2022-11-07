@@ -4,6 +4,7 @@ import GOOL from '../images/Gool.png';
 import DazeCam from '../images/Dazecam.png';
 import Jate from '../images/jate.png';
 import NoteTaker from '../images/NoteTaker.png';
+import Slide from '../images/slide.png';
 import IndividualProject from './individualProject';
 
 const styles = {
@@ -99,7 +100,7 @@ const noteProject = {
 
 const slideProject = {
     href: "https://drive.google.com/file/d/1gtDgPA4QEM3Sk1J-GhmdKXcytUN-JKqO/view?usp=sharing",
-    imgSrc: Jate,
+    imgSrc: Slide,
     imgAlt: "Slide logo, the word slide in cursive font",
     pTag: slidePTag,
     github: "https://github.com/CMolitor96/Slide",
