@@ -23,7 +23,7 @@ function Contact() {
 
     const inputRequired = (e) => {
         setName(e.target.value);
-        if (name.length === 0) {
+        if (!name.length) {
             console.log(e.target.id);
             alert(`${e.target.id} is a required field!`);
         }
@@ -68,6 +68,11 @@ function Contact() {
                             <textarea className="form-control" id="message" rows="3" onBlur={inputRequired}></textarea>
                         </div>
                     </form>
+                </div>
+            </div><br></br>
+            <div className='row'>
+                <div className='col'>
+                    <button className='btn btn-primary'>Send Message</button>
                 </div>
             </div>
         </div>
