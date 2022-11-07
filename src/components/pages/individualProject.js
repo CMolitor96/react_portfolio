@@ -29,10 +29,13 @@ const styles = {
     container: {
         position: 'relative',
         minHeight: '100vh',
+    },
+    button: {
+        margin: '.5rem',
     }
 }
 
-function Project({href, imgSrc, imgAlt, pTag, github}) {
+function IndividualProject({href, imgSrc, imgAlt, pTag, github}) {
     // eslint-disable-next-line
     const [isHover, setIsHover] = useState(false);
 
@@ -53,7 +56,7 @@ function Project({href, imgSrc, imgAlt, pTag, github}) {
                 <div className='col-sm text-center p-3'>
                     <p>{pTag}</p>
                         <a href={github} target="_blank" rel="noreferrer">
-                            <p>Check out this repo on my GitHub!</p>
+                            <button style={styles.button} className="btn btn-primary">Check out this repo on my GitHub!</button>
                         </a>
                 </div>
             </div>
@@ -61,4 +64,4 @@ function Project({href, imgSrc, imgAlt, pTag, github}) {
     );
 }
 
-export default Project;
+export default IndividualProject;

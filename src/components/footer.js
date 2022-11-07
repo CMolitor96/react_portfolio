@@ -30,22 +30,16 @@ const styles = {
 }
 
 function Footer({currentPage, setCurrentPage}) {
-    const github = () => {
-        window.open('https://github.com/CMolitor96', '_blank');
-    }
-    const linkedin = () => {
-        window.open('https://www.linkedin.com/in/charles-molitor-725703119', '_blank');
-    }
-    const mountainProject = () => {
-        window.open('https://www.mountainproject.com/user/200675695/charlie-molitor', '_blank');
-    }
 
     return (
         <div style={styles.footer}>
-            <div style={styles.icon} onClick={github}><FaGithub /></div>
+            <a style={styles.link}  href="https://github.com/CMolitor96" target="_blank" rel="noreferrer">
+                <div style={styles.icon}><FaGithub /></div>
+            </a>
             <div style={styles.icon} onClick={() => setCurrentPage('Contact')}><FaEnvelope /></div>
-            <div style={styles.icon} onClick={linkedin}><FaLinkedin /></div>
-            <div style={styles.icon} onClick={mountainProject}><FaMountain /></div>
+            <a style={styles.link} href="https://www.linkedin.com/in/charles-molitor-725703119" target="_blank" rel="noreferrer">
+                <div style={styles.icon}><FaLinkedin /></div>
+            </a>
             <a  style={styles.link} href="https://www.mountainproject.com/user/200675695/charlie-molitor" target="_blank" rel="noreferrer">
                 <div style={styles.icon} ><FaMountain /></div>
             </a>

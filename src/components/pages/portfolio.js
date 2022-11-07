@@ -4,7 +4,7 @@ import GOOL from '../images/Gool.png';
 import DazeCam from '../images/Dazecam.png';
 import Jate from '../images/jate.png';
 import NoteTaker from '../images/NoteTaker.png';
-import Project from './project';
+import IndividualProject from './individualProject';
 
 const styles = {
     header: {
@@ -52,6 +52,11 @@ create the notes, which when saved are then stored on a JSON file via a back end
 new notes appends them to the JSON file, and deleting notes removes them from the file. Note Taker
 uses Node.js, Express.js, and the fs package to read and write to the saved JSON file.`;
 
+const slidePTag = `Slide is a social media API that allows users to create an account, post thoughts, 
+find friends, and react to friends thoughts. This is a stricly back end project built with Node and 
+Express, and MongoDB with the Mongoose library for the database. Please note the logo link will take you
+to a walkthrough video on google drive.`;
+
 const dazecamProject = {
     href: "https://cmolitor96.github.io/dazecamLanding/",
     imgSrc: DazeCam,
@@ -92,6 +97,14 @@ const noteProject = {
     github: "https://github.com/CMolitor96/Note_Taker"
 };
 
+const slideProject = {
+    href: "https://drive.google.com/file/d/1gtDgPA4QEM3Sk1J-GhmdKXcytUN-JKqO/view?usp=sharing",
+    imgSrc: Jate,
+    imgAlt: "Slide logo, the word slide in cursive font",
+    pTag: slidePTag,
+    github: "https://github.com/CMolitor96/Slide",
+};
+
 function Portfolio() {
 
     return (
@@ -101,11 +114,12 @@ function Portfolio() {
                     Portfolio
                 </div>
             </div>
-            <Project {...dazecamProject}/>
-            <Project {...fitfoodProject}/>
-            <Project {...goolProject}/>
-            <Project {...jateProject}/>
-            <Project {...noteProject}/>
+            <IndividualProject {...dazecamProject}/>
+            <IndividualProject {...fitfoodProject}/>
+            <IndividualProject {...goolProject}/>
+            <IndividualProject {...jateProject}/>
+            <IndividualProject {...noteProject}/>
+            <IndividualProject {...slideProject}/>
         </div>
     );
 }
