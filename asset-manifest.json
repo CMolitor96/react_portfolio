@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/react_portfolio/static/css/main.76031048.css",
+    "main.js": "/react_portfolio/static/js/main.066fce7b.js",
+    "static/js/787.a2cb61a6.chunk.js": "/react_portfolio/static/js/787.a2cb61a6.chunk.js",
+    "static/media/Gool.png": "/react_portfolio/static/media/Gool.724c2cc1f460e1fe6b0b.png",
+    "static/media/FitFood.png": "/react_portfolio/static/media/FitFood.fc56881fc18bbce5a6d7.png",
+    "static/media/Dazecam.png": "/react_portfolio/static/media/Dazecam.7f030f7c714b0d1e824d.png",
+    "static/media/charlie.jpeg": "/react_portfolio/static/media/charlie.6f1043162d703c7fa624.jpeg",
+    "static/media/NoteTaker.png": "/react_portfolio/static/media/NoteTaker.140e52ca0e04eb387e0f.png",
+    "index.html": "/react_portfolio/index.html",
+    "main.76031048.css.map": "/react_portfolio/static/css/main.76031048.css.map",
+    "main.066fce7b.js.map": "/react_portfolio/static/js/main.066fce7b.js.map",
+    "787.a2cb61a6.chunk.js.map": "/react_portfolio/static/js/787.a2cb61a6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.76031048.css",
+    "static/js/main.066fce7b.js"
+  ]
+}
