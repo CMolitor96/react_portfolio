@@ -1,7 +1,13 @@
 # **React Portfolio**
 
 ## Project Description
-This is an updated version to my online portfolio built with React.
+This is an updated version to my online portfolio built with vanilla HTML and CSS with no frameworks.
+
+This portfolio is built using React.
+
+This react app is live on GitHub pages. Follow the link below to access.
+
+`https://cmolitor96.github.io/react_portfolio/`
 
 ## Table of Contents:
 
@@ -14,9 +20,6 @@ This is an updated version to my online portfolio built with React.
 ## License:
 Please click the license badge for more information on the license under which this project is covered.
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-
-## Project Usage:
-This react app is live on GitHub pages. Follow the link below to access.
 
 
 ## Questions:
