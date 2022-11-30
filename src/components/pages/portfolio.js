@@ -5,6 +5,7 @@ import DazeCam from '../images/Dazecam.png';
 import Jate from '../images/jate.png';
 import NoteTaker from '../images/NoteTaker.png';
 import Slide from '../images/slide.png';
+import InstacookPic from '../images/instacook.png';
 import IndividualProject from './individualProject';
 
 const styles = {
@@ -58,6 +59,12 @@ find friends, and react to friends thoughts. This is a stricly back end project 
 Express, and MongoDB with the Mongoose library for the database. Please note the logo link will take you
 to a walkthrough video on google drive.`;
 
+const instacookPTag = `Instacook is a recipe sharing app. It features user authentication for users to 
+save a collection of their own created/shared recipes, as well as delete their own posts if needed. Shared 
+recipes are public and anyone with an account can access posted recipes. Instacook is deployed on Heroku and is
+a React app with an Express.js backend with MongoDB and Mongoose to handle the database, and Apollo GraphQL to
+handle all queries and mutations.`;
+
 const dazecamProject = {
     href: "https://cmolitor96.github.io/dazecamLanding/",
     imgSrc: DazeCam,
@@ -106,6 +113,14 @@ const slideProject = {
     github: "https://github.com/CMolitor96/Slide",
 };
 
+const instacook = {
+    href: "https://frozen-chamber-50604.herokuapp.com/",
+    imgSrc: InstacookPic,
+    imgAlt: "Homepage of instacook recipe sharer website",
+    pTag: instacookPTag,
+    github: "https://github.com/CMolitor96/instacook",
+}
+
 function Portfolio() {
 
     return (
@@ -115,6 +130,7 @@ function Portfolio() {
                     Portfolio
                 </div>
             </div>
+            <IndividualProject {...instacook}/>
             <IndividualProject {...dazecamProject}/>
             <IndividualProject {...fitfoodProject}/>
             <IndividualProject {...goolProject}/>
